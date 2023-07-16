@@ -51,16 +51,14 @@ uvicorn app.main:app --reload
 ```
 
 ### Endpoint
-`/autobid`: auto generating events 
-POST request example:
+`/autobid`: auto generating events  
 ```json
 {
     "frequency": 10
 }
 ```
 
-`/bid`: make an event
-POST request example:
+`/bid`: make an event  
 ```json
 {
     "name": "ersa",
