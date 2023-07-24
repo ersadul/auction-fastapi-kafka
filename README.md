@@ -5,7 +5,7 @@ This is a project that trying to build a streaming data service. Using FastAPI t
 
 note for me for further reference:
 - specify the topic key if you are concerned with events ordering (storing in the same partition) and create the most suitable key because when I sink into the topic into BigQuery the key is not included as a message.
-- Dont overuse ksql to create analytical queries (CMIIW, i just heard it from the expert but it makes sense)
+- Dont overuse ksql to create analytical queries (CMIIW, I just heard it from the expert but it makes sense)
 
 ## Prerequisites and requirements
 to install all the dependencies:
@@ -70,3 +70,10 @@ uvicorn app.main:app --reload
     }
 }
 ```
+## References
+- [Kafka Fundamental - Programmer Zaman Now](https://youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF)
+- [Kafka Fundamental - Confluent](https://www.youtube.com/playlist?list=PLa7VYi0yPIH2PelhRHoFR5iQgflg-y6JA)
+- [Kafka usecase](https://www.youtube.com/watch?v=posIZrz-m7s)
+- [ksqlDB - Confluent](https://developer.confluent.io/courses/ksqldb/intro/)
+- [kafka project - Subham Kumar](https://subham-sahoo.medium.com/live-data-streaming-project-using-kafka-part-1-9e7553c70b1)
+- [Build app with kafka and python - Confluent](https://www.youtube.com/watch?v=jItIQ-UvFI4)
